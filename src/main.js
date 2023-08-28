@@ -1,13 +1,13 @@
 (function () {
   const searchBar = document.querySelector(".search"),
-    searchButton = document.querySelector(".toggle-search-btn"),
+    searchButton = document.querySelector(".search-toggle-btn"),
     searchInput = document.querySelector(".search-input");
 
   searchButton.addEventListener("click", (e) => {
     const expanded = searchButton.getAttribute("aria-expanded") === "false";
     searchButton.setAttribute("aria-expanded", String(expanded));
 
-    searchBar.classList.toggle("show-search");
+    searchBar.classList.toggle("-active");
 
     searchBar.addEventListener(
       "transitionend",

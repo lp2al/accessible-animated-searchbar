@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import postcssNesting from "postcss-nesting";
 
 export default defineConfig({
   root: "./src",
@@ -14,5 +15,6 @@ export default defineConfig({
         assetFileNames: "assets/css/[name].css", // Use [name].[ext] format for CSS files
       },
     },
+    minify: false,
   },
 });
